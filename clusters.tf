@@ -22,3 +22,10 @@ resource "linode_lke_cluster" "main_cluster" {
     }
 }
 
+output "kubeconfig" {
+   value = linode_lke_cluster.main_cluster.kubeconfig
+   sensitive = true
+}
+
+main_cluster{}
+
