@@ -27,5 +27,5 @@ output "kubeconfig" {
    sensitive = true
 }
 
-main_cluster{}
+variable "main_cluster"{}
 
